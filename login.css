@@ -5,10 +5,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* تنسيق الخلفية */
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -17,20 +15,6 @@ body {
   background-position: center;
 }
 
-/* تنسيق الشعار */
-.logo {
-  font-size: 50px;
-  font-weight: bold;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-  backdrop-filter: blur(10px);
-}
-
-/* تنسيق مربع تسجيل الدخول */
 .wrapper {
   width: 420px;
   background: transparent;
