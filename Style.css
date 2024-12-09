@@ -23,7 +23,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
+  color: #008080;
 }
 
 .logo-box {
