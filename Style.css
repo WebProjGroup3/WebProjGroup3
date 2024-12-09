@@ -32,7 +32,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(9px);
-  color: #fff;
+  color:	#fff ;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
@@ -42,7 +42,7 @@ body {
 .logo-box h1 {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #28a745; /* لون أخضر مميز */
+  color: 	#008080; /* لون أخضر مميز */
   margin: 0;
 }
 
