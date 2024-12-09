@@ -6,7 +6,6 @@
     <title>حاسبة التمارين الرياضية</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="bg-light">
@@ -42,17 +41,23 @@
         function calculateExercise() {
             const age = parseInt(document.getElementById("age").value);
             const weight = parseFloat(document.getElementById("weight").value);
-            const height = parseFloat(document.getElementById("height").value);
-            let resultMessage = "";
+            const height = parseFloat(document.getElementById("height").value) / 100; // تحويل الطول إلى متر
+
+            // حساب مؤشر كتلة الجسم
+            const bmi = (weight / (height * height)).toFixed(2);
+
+            // تحديد التوصيات بناءً على العمر
+            let resultMessage = `مؤشر كتلة الجسم الخاص بك هو: ${bmi}\n`;
 
             if (age >= 18) {
-                resultMessage = "تحتاج إلى 150 دقيقة من التمارين الأسبوعية المعتدلة أو 75 دقيقة من التمارين المكثفة.";
+                resultMessage += "تحتاج إلى 150 دقيقة من التمارين الأسبوعية المعتدلة أو 75 دقيقة من التمارين المكثفة.";
             } else if (age >= 6) {
-                resultMessage = "تحتاج إلى ساعة واحدة يومياً من النشاط البدني.";
+                resultMessage += "تحتاج إلى ساعة واحدة يومياً من النشاط البدني.";
             } else {
-                resultMessage = "لا توجد توصيات محددة لهذه الفئة العمرية.";
+                resultMessage += "لا توجد توصيات محددة لهذه الفئة العمرية.";
             }
 
+            // عرض النتيجة
             const resultDiv = document.getElementById("result");
             resultDiv.innerText = resultMessage;
             resultDiv.classList.remove("d-none");
