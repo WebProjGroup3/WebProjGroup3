@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* ترتيب العناصر عمودياً */
+  flex-direction: column; 
   min-height: 100vh;
   background: url('bg.jpg') no-repeat;
   background-size: cover;
