@@ -8,14 +8,14 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <!-- الشعار -->
+ 
   <header class="logo">
     <div class="logo-box">
       <h1>منصة مرن</h1>
     </div>
   </header>
 
-  <!-- واجهة تسجيل الدخول -->
+  
   <div class="wrapper">
     <form onsubmit="return validateLogin();">
       <h1>Login</h1>
@@ -39,19 +39,19 @@
   </div>
 
   <script>
-    // التحقق من بيانات تسجيل الدخول
+   
     function validateLogin() {
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
 
-      // بيانات تسجيل الدخول الثابتة
+     
       const validUsername = "user";
       const validPassword = "12345";
 
       if (username === validUsername && password === validPassword) {
-        // الانتقال إلى الصفحة الرئيسية
-        window.location.href = "calculator.html"; // استبدل calculator.html بملف صفحة الحاسبة
-        return false; // منع إعادة تحميل الصفحة
+        
+        window.location.href = "calculator.html";
+        return false; 
       } else {
         alert("اسم المستخدم أو كلمة المرور غير صحيحة!");
         return false;
