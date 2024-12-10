@@ -43,10 +43,10 @@
             const weight = parseFloat(document.getElementById("weight").value);
             const height = parseFloat(document.getElementById("height").value) / 100; // تحويل الطول إلى متر
 
-            // حساب مؤشر كتلة الجسم
+           
             const bmi = (weight / (height * height)).toFixed(2);
 
-            // تحديد التوصيات بناءً على العمر
+           
             let resultMessage = `مؤشر كتلة الجسم الخاص بك هو: ${bmi}\n`;
 
             if (age >= 18) {
@@ -57,12 +57,12 @@
                 resultMessage += "لا توجد توصيات محددة لهذه الفئة العمرية.";
             }
 
-            // عرض النتيجة
+           
             const resultDiv = document.getElementById("result");
             resultDiv.innerText = resultMessage;
             resultDiv.classList.remove("d-none");
 
-            return false; // لمنع إعادة تحميل الصفحة
+            return false;
         }
     </script>
 </body>
